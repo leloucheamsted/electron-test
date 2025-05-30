@@ -1,0 +1,369 @@
+
+/* Light theme (par défaut) */
+body.light-theme, .light-theme {
+  background-color: #f4f4f4;
+  color: #222;
+}
+.light-theme .note-editor,
+.light-theme .note-list-item,
+.light-theme .markdown-preview {
+  background-color: #fff;
+  border-color: #ccc;
+  color: #222;
+}
+.light-theme .modal-content {
+  background: #fff;
+  color: #222;
+}
+
+/* Dark theme */
+body.dark-theme, .dark-theme {
+  background-color: #232323;
+  color: #f4f4f4;
+}
+.dark-theme .note-editor,
+.dark-theme .note-list-item,
+.dark-theme .markdown-preview {
+  background-color: #2c2c2c;
+  border-color: #444;
+  color: #f4f4f4;
+}
+.dark-theme .modal-content {
+  background: #2c2c2c;
+  color: #f4f4f4;
+}
+.dark-theme input,
+.dark-theme textarea {
+  background: #232323;
+  color: #f4f4f4;
+  border-color: #444;
+}
+.dark-theme input:focus,
+.dark-theme textarea:focus {
+  border-color: #1976d2;
+}
+.dark-theme .sort-button,
+.dark-theme .search-bar button,
+.dark-theme .download-pdfBtn,
+.dark-theme .editor-actions button {
+  background: #444;
+  color: #f4f4f4;
+}
+.dark-theme .sort-button:hover,
+.dark-theme .fab:hover,
+.dark-theme .search-bar button:hover,
+.dark-theme .download-pdfBtn:hover,
+.dark-theme .editor-actions button:hover {
+  background: #1976d2;
+}
+.dark-theme .delete-btn {
+  background: #d32f2f;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+} */
+
+.dark-theme h1, h2, h3 {
+  color: #fff; 
+}
+.light-theme span {
+  color: #333; 
+}
+.dark-theme span {
+  color: #f4f4f4; 
+}
+
+.note-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  /* background: #f9f9f9; */
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  min-width: 320px;
+  height: 100%;
+}
+
+.theme-button{
+
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  transition: background 0.2s;
+}
+.note-editor input[type="text"] {
+  padding: 0.75rem 1rem;
+
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.editor-space{
+   display:flex; height: 75%;
+   width: 100%;
+}
+.note-editor input[type="text"]:focus {
+  border: 1.5px solid #1976d2;
+}
+
+.note-editor textarea {
+  min-height: 120px;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.note-editor textarea:focus {
+  border: 1.5px solid #1976d2;
+}
+.texteria{
+  height: 100%;
+
+}
+
+.end-title{
+  display: flex ;
+  justify-content: space-start;
+  align-items: center;
+  margin-right: 5px;
+
+}
+.date-time{
+  font-size: 0.8rem;
+  color: #666;
+  margin-right: 10px;
+
+}
+.editor-actions {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+.markdown-p{
+    flex: 1;
+    min-height: 120;
+    background: transparent;
+    border-radius: 6;
+    padding: 0.75rem 1rem;
+    overflow: 'auto'
+}
+.download-pdfBtn{
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  transition: background 0.2s;
+}
+.download-pdfBtn:hover {
+  background: #1565c0;
+}
+
+.dawload-pdfBtn:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+.editor-actions button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.editor-actions button:last-child {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.editor-actions button:hover {
+  background: #1565c0;
+}
+
+.editor-actions button:last-child:hover {
+  background: #bdbdbd;
+}
+.note-list {
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-center;
+  align-items: stretch;
+  list-style-type: none;
+  padding: 0;
+}
+
+.note-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  background-color: rebeccapurple;
+  /* background-color: #fff; */
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.delete-btn{
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.note-title{
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.note-mark{
+  color: #666;
+  font-size: 0.9em;
+
+}
+
+.note-list-item:hover {
+  background-color: #e9e9e9;
+}
+
+.markdown-preview {
+  /* background-color: #fff; */
+  border: 1px solid ;
+  border-radius: 5px;
+  padding: 15px;
+  overflow: auto;
+}
+
+.dark-theme {
+  background-color: #2c2c2c;
+  color: #f4f4f4;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  /* background: #fff; */
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 100%;
+  height: 100%;
+}
+
+.dark-theme .note-editor,
+.dark-theme .note-list-item,
+.dark-theme .markdown-preview {
+  background-color: #3c3c3c;
+  border-color: #444;
+}
+.fab {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #1976d2;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.fab:hover {
+  background: #1565c0;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.search-bar input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.search-bar input[type="text"]:focus {
+  border: 1.5px solid #1976d2;
+}
+.search-bar button {
+  margin-left: 10px;
+  padding:0.7rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  transition: background 0.2s;
+}
+.search-bar button:hover {
+  background: #1565c0;
+}
+.search-bar button:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+.search-bar button:disabled:hover {
+  background: #bdbdbd;
+}
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sort-button{
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #1976d2;
+  color: #fff;
+  transition: background 0.2s;
+}
+.rc-md-editor{
+  width: 100%;
+}
+.hide{
+  display: none;
+}
